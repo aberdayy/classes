@@ -1,0 +1,47 @@
+system calls
+ps: Calisan islemleri gosterir.
+top: calisan sistemin dinamik gercek zamanli gorunumunu sunar
+ps -e| head : isletim sistemi proccesslerini gosterir.
+man: shows manual for the command
+pidof system => proccess id
+pidof systemd
+proccess creation
+fork system call : the child proccess is duplicate if the parent proccess
+fork and exec system calls :  overlys the proccess address space with a new program . Exec() does not return control unless an error occurs
+
+assigns proccess id bigger then zero if we are in parent
+assigns priccess id zero if we are in child
+helps us understand if we in parent or child
+if pid is 0 child
+if pid is >0 parent
+if pidis -=1 error
+when a proccess creates a new proccess tww execution exists
+	parent continues to execute concurrently with its children
+	the parent waits until some or all of its child have terminated
+	
+move a proccess to ready queue by wait()
+
+Terminate a proccess by exit() range between 1-255
+ex:	exit(1)
+helps us understand the error, controlflow, feedback, integration, debugging
+
+fork() , exec() , wait() , exit ()
+
+mulitple forks creates as 2 ussu n minus 1 (2ustN-1)
+2 ussu fork sayisi - 1 
+
+7
+
+chaining or FAN 
+forkun yerini degistirmek agac yapisinin degismesini saglar
+if pid==0 
+	sadece cocuk proccess olablir
+if pid>0 
+	sadece parent cocuk olusabilir
+	
+
+try to create a tree structure 
+create different tree structures
+try to find out how many proccess can created by user
+ 
+

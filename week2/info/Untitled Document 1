@@ -1,0 +1,14 @@
+x.h file header file
+x.cpp file (connect files with #include <x.h>) cpp file
+
+source.cpp (incliude <iostream>)
+source cpp (icnlude <x.h>)
+Two .0 files will need .out file
+
+.o file object file
+.o file must connect with .out file 
+
+MakeFile is eases this proccess
+
+learn to use MakeFile 
+
